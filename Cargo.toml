@@ -1,0 +1,13 @@
+[package]
+name            = "vmath"
+description     = "Vector and matrix maths library, mainly for computer graphics applications"
+version         = "0.1.0"
+authors         = ["Isaac Woods"]
+license         = "MIT"
+license-file    = "LICENSE"
+
+[lib]
+name = "vmath"
+path = "src/lib.rs"
+
+[dependencies]
