@@ -7,25 +7,25 @@ use std::ops;
 
 macro_rules! impl_vector
 {
-    ($name : ident, $($component : ident),*) =>
+    ($name : ident, $($component : ident),+) =>
     {
         #[derive(Clone,Copy,Debug,PartialEq)]
         pub struct $name
         {
             $(
                 pub $component : f32,
-             )*
+             )+
         }
 
         impl $name
         {
-            pub fn new($($component : f32,)*) -> $name
+            pub fn new($($component : f32,)+) -> $name
             {
                 $name
                 {
                     $(
                         $component : $component,
-                     )*
+                     )+
                 }
             }
         }
@@ -40,7 +40,7 @@ macro_rules! impl_vector
                 {
                     $(
                         $component : self.$component + rhs.$component,
-                     )*
+                     )+
                 }
             }
         }
@@ -55,7 +55,7 @@ macro_rules! impl_vector
                 {
                     $(
                         $component : self.$component - rhs.$component,
-                     )*
+                     )+
                 }
             }
         }
@@ -70,7 +70,7 @@ macro_rules! impl_vector
                 {
                     $(
                         $component : self.$component * rhs.$component,
-                     )*
+                     )+
                 }
             }
         }
@@ -85,7 +85,7 @@ macro_rules! impl_vector
                 {
                     $(
                         $component : self.$component / rhs.$component,
-                     )*
+                     )+
                 }
             }
         }
@@ -100,7 +100,7 @@ macro_rules! impl_vector
                 {
                     $(
                         $component : -self.$component,
-                     )*
+                     )+
                 }
             }
         }
