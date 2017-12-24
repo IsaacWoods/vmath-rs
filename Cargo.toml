@@ -1,9 +1,15 @@
 [package]
 name            = "vmath"
 description     = "Vector and matrix maths library, mainly for computer graphics applications"
+keywords        = ["math","vector","matrix","graphics","game-engines"]
 version         = "0.1.1"
 authors         = ["Isaac Woods"]
 license         = "MIT"
+repository      = "https://github.com/IsaacWoods/vmath-rs"
+readme          = "README.md"
+
+[badges]
+travis-ci = { repository = "IsaacWoods/vmath-rs", branch = "master" }
 
 [lib]
 name = "vmath"
