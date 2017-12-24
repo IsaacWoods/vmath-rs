@@ -4,7 +4,6 @@ description     = "Vector and matrix maths library, mainly for computer graphics
 version         = "0.1.0"
 authors         = ["Isaac Woods"]
 license         = "MIT"
-license-file    = "LICENSE"
 
 [lib]
 name = "vmath"
