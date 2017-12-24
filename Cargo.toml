@@ -1,7 +1,7 @@
 [package]
 name            = "vmath"
 description     = "Vector and matrix maths library, mainly for computer graphics applications"
-version         = "0.1.0"
+version         = "0.1.1"
 authors         = ["Isaac Woods"]
 license         = "MIT"
 
